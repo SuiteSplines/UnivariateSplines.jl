@@ -1,0 +1,6 @@
+/Manifest*.toml
+/docs/Manifest*.toml
+/docs/build/
+/registries
+Manifest.toml
+/.vscode
