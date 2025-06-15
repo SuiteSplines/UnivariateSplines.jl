@@ -57,7 +57,7 @@ Engineering 87.1‐5 (2011): 15-47.
 julia> p = Degree(2); U = KnotVector([0.0,0.0,0.0,1.0,3.0,3.0,4.0,4.0,4.0]);
 
 julia> bezier_extraction_operator(p, U)
-3×3×3 Array{Float64,3}:
+3×3×3 Array{Float64, 3}:
 [:, :, 1] =
  1.0  0.0       0.0
  0.0  1.0       0.0
@@ -161,7 +161,7 @@ julia> U = KnotVector([0.0,1.0,2.0,3.0,4], [3,1,1,2,3])
 julia> C = h_refinement_operator!(p, U, [0.5, 1.5, 2.5, 3.5]); # sparse matrix
 
 julia> Matrix(C)
-11×7 Array{Float64,2}:
+11×7 Matrix{Float64}:
  1.0  0.0   0.0   0.0   0.0  0.0  0.0
  0.5  0.5   0.0   0.0   0.0  0.0  0.0
  0.0  0.75  0.25  0.0   0.0  0.0  0.0

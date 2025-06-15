@@ -42,8 +42,9 @@ julia> S = SplineSpace(2, IncreasingVector([0.0,1.0,2.0,3.0]), [3,2,2,3]);
 julia> V = SplineSpace(2, IncreasingVector([0.0,1.0,2.0,3.0]), [3,1,1,3]);
 
 julia> A = UnivariateSplines.table_required_points(S, V)
-3×3 Array{Int64,2}:
- 3  5  8
+3×3×1 Array{Int64, 3}:
+[:, :, 1] =
+ 3  5  7
  2  5  0
  3  0  0
 ```
@@ -100,7 +101,7 @@ julia> S = SplineSpace(2, IncreasingVector([0.0,1.0,2.0,3.0]), [3,2,2,3]);
 julia> V = SplineSpace(2, IncreasingVector([0.0,1.0,2.0,3.0]), [3,1,1,3]);
 
 julia> A = UnivariateSplines.nquadpoints(S, V; add_boundary_points=false)
-3-element Array{Int64,1}:
+3-element Vector{Int64}:
  3
  2
  3

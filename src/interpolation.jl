@@ -22,43 +22,43 @@ julia> B = bspline_interpolation_matrix(p, U, x, p+1);
 ```
 The interpolation matrix for quadratic B-splines is
 ```jldoctest collocation
-julia> Matrix(B[1])
-3×7 Array{Float64,2}:
- 0.25  0.583333  0.166667  0.0       0.0   0.0  0.0
- 0.0   0.0       0.666667  0.333333  0.0   0.0  0.0
- 0.0   0.0       0.0       0.0       0.25  0.5  0.25
+julia> B[1]
+3×7 SparseArrays.SparseMatrixCSC{Float64, Int64} with 9 stored entries:
+ 0.25  0.583333  0.166667   ⋅         ⋅     ⋅    ⋅ 
+  ⋅     ⋅        0.666667  0.333333  0.0    ⋅    ⋅ 
+  ⋅     ⋅         ⋅         ⋅        0.25  0.5  0.25
 ```
 The interpolation matrix for linear and constant B-splines
 is given by
 ```jldoctest collocation
-julia> Matrix(B[2])
-3×6 Array{Float64,2}:
- 0.5  0.5  0.0  0.0  0.0  0.0
- 0.0  0.0  1.0  0.0  0.0  0.0
- 0.0  0.0  0.0  0.0  0.5  0.5
+julia> B[2]
+3×6 SparseArrays.SparseMatrixCSC{Float64, Int64} with 6 stored entries:
+ 0.5  0.5   ⋅    ⋅    ⋅    ⋅ 
+  ⋅    ⋅   1.0  0.0   ⋅    ⋅ 
+  ⋅    ⋅    ⋅    ⋅   0.5  0.5
 
-julia> Matrix(B[3])
-3×5 Array{Float64,2}:
- 1.0  0.0  0.0  0.0  0.0
- 0.0  0.0  1.0  0.0  0.0
- 0.0  0.0  0.0  0.0  1.0
+julia> B[3]
+3×5 SparseArrays.SparseMatrixCSC{Float64, Int64} with 3 stored entries:
+ 1.0   ⋅    ⋅    ⋅    ⋅ 
+  ⋅    ⋅   1.0   ⋅    ⋅ 
+  ⋅    ⋅    ⋅    ⋅   1.0
 ```
 It can be easily verified that the B-splines satisfy a partition of unity
 ```jldoctest collocation
 julia> sum(B[1],dims=2)
-3×1 Array{Float64,2}:
+3×1 Matrix{Float64}:
  1.0
  1.0
  1.0
 
 julia> sum(B[2],dims=2)
-3×1 Array{Float64,2}:
+3×1 Matrix{Float64}:
  1.0
  1.0
  1.0
 
 julia> sum(B[3],dims=2)
-3×1 Array{Float64,2}:
+3×1 Matrix{Float64}:
  1.0
  1.0
  1.0
@@ -69,15 +69,15 @@ evaluated at the Greville points can be computed as follows
 ```jldoctest collocation
 julia> x = grevillepoints(p, U);
 
-julia> B = Matrix(bspline_interpolation_matrix(p, U, x, p+1)[1])
-7×7 Array{Float64,2}:
- 1.0   0.0        0.0       0.0        0.0   0.0  0.0
- 0.25  0.583333   0.166667  0.0        0.0   0.0  0.0
- 0.0   0.0833333  0.833333  0.0833333  0.0   0.0  0.0
- 0.0   0.0        0.166667  0.583333   0.25  0.0  0.0
- 0.0   0.0        0.0       0.0        1.0   0.0  0.0
- 0.0   0.0        0.0       0.0        0.25  0.5  0.25
- 0.0   0.0        0.0       0.0        0.0   0.0  1.0
+julia> B = bspline_interpolation_matrix(p, U, x, p+1)[1]
+7×7 SparseArrays.SparseMatrixCSC{Float64, Int64} with 21 stored entries:
+ 1.0   0.0        0.0        ⋅          ⋅     ⋅    ⋅ 
+ 0.25  0.583333   0.166667   ⋅          ⋅     ⋅    ⋅ 
+  ⋅    0.0833333  0.833333  0.0833333   ⋅     ⋅    ⋅ 
+  ⋅     ⋅         0.166667  0.583333   0.25   ⋅    ⋅ 
+  ⋅     ⋅          ⋅         ⋅         1.0   0.0  0.0
+  ⋅     ⋅          ⋅         ⋅         0.25  0.5  0.25
+  ⋅     ⋅          ⋅         ⋅         0.0   0.0  1.0
 ```
 The matrix ``\\mathsf{B}`` can then be used to interpolate a univariate function. For
 example, up to quadratic polynomials are exactly reproduced
@@ -133,38 +133,26 @@ The output is a set of `SparseMatrixCSC` matrices. For example
 the B-splines evaluate at points ``x`` are
 ```jldoctest collocate_derivatives
 julia> B[1]
-3×7 SparseMatrixCSC{Float64,Int64} with 9 stored entries:
-  [1, 1]  =  0.25
-  [1, 2]  =  0.583333
-  [1, 3]  =  0.166667
-  [2, 3]  =  0.666667
-  [2, 4]  =  0.333333
-  [2, 5]  =  0.0
-  [3, 5]  =  0.25
-  [3, 6]  =  0.5
-  [3, 7]  =  0.25
-
-julia> Matrix(B[1])
-3×7 Array{Float64,2}:
- 0.25  0.583333  0.166667  0.0       0.0   0.0  0.0
- 0.0   0.0       0.666667  0.333333  0.0   0.0  0.0
- 0.0   0.0       0.0       0.0       0.25  0.5  0.25
+3×7 SparseArrays.SparseMatrixCSC{Float64, Int64} with 9 stored entries:                       
+ 0.25  0.583333  0.166667   ⋅         ⋅     ⋅    ⋅                                            
+  ⋅     ⋅        0.666667  0.333333  0.0    ⋅    ⋅                                            
+  ⋅     ⋅         ⋅         ⋅        0.25  0.5  0.25                                          
 ```
 Derivatives of quadratic B-splines evaluated at ``x``
 ```jldoctest collocate_derivatives
-julia> Matrix(B[2])
-3×7 Array{Float64,2}:
- -1.0  0.333333   0.666667  0.0       0.0  0.0  0.0
-  0.0  0.0       -1.33333   1.33333   0.0  0.0  0.0
-  0.0  0.0        0.0       0.0      -2.0  0.0  2.0
+julia> B[2]
+3×7 SparseArrays.SparseMatrixCSC{Float64, Int64} with 9 stored entries:
+ -1.0  0.333333   0.666667   ⋅         ⋅    ⋅    ⋅ 
+   ⋅    ⋅        -1.33333   1.33333   0.0   ⋅    ⋅ 
+   ⋅    ⋅          ⋅         ⋅       -2.0  0.0  2.0
 ```
 Second derivatives of quadratic B-splines evaluated at ``x``
 ```jldoctest collocate_derivatives
-julia> Matrix(B[3])
-3×7 Array{Float64,2}:
- 2.0  -3.33333  1.33333   0.0      0.0    0.0  0.0
- 0.0   0.0      1.33333  -3.33333  2.0    0.0  0.0
- 0.0   0.0      0.0       0.0      8.0  -16.0  8.0
+julia> B[3]
+3×7 SparseArrays.SparseMatrixCSC{Float64, Int64} with 9 stored entries:
+ 2.0  -3.33333  1.33333    ⋅        ⋅      ⋅    ⋅ 
+  ⋅     ⋅       1.33333  -3.33333  2.0     ⋅    ⋅ 
+  ⋅     ⋅        ⋅         ⋅       8.0  -16.0  8.0
 ```
 """
 function ders_bspline_interpolation_matrix(p::Degree, U::KnotVector, span, u, nout::Int=1)

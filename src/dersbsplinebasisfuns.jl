@@ -26,7 +26,7 @@ julia> span = findspan(p, U, x)
 4
 
 julia> dersbsplinebasisfuns(p, U, span, x, p+1)
-3×3 Array{Float64,2}:
+3×3 Matrix{Float64}:
  0.125  -0.5   1.0
  0.625  -0.5  -3.0
  0.25    1.0   2.0
@@ -35,7 +35,7 @@ julia> dersbsplinebasisfuns(p, U, span, x, p+1)
 which case they will be calculated on the fly.
 ```jldoctest derivatives
 julia> dersbsplinebasisfuns(p, U, x, p+1)
-3×3 Array{Float64,2}:
+3×3 Matrix{Float64}:
  0.125  -0.5   1.0
  0.625  -0.5  -3.0
  0.25    1.0   2.0
@@ -60,7 +60,7 @@ julia> span = findspan(p, U, x)
  4
 
 julia> dersbsplinebasisfuns(p, U, span, x, p+1)
-3×2×3 Array{Float64,3}:
+3×2×3 Array{Float64, 3}:
 [:, :, 1] =
  0.25   0.125
  0.625  0.625
@@ -91,7 +91,7 @@ julia> x = [0.25 1.25;
             0.75 1.75];
 
 julia> dersbsplinebasisfuns(p, U, x, p+1)
-3×2×2×3 Array{Float64,4}:
+3×2×2×3 Array{Float64, 4}:
 [:, :, 1, 1] =
  0.5625   0.0625
  0.40625  0.65625
