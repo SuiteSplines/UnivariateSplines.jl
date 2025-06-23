@@ -1,3 +1,4 @@
 [deps]
 Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+IgaBase = "9c103fa8-ae55-49f5-92db-ab77803cf2c4"
 UnivariateSplines = "2552f6ce-f0d6-4ba3-bf39-bb338613ee69"
