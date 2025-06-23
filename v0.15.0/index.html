@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Home · UnivariateSplines.jl</title><meta name="title" content="Home · UnivariateSplines.jl"/><meta property="og:title" content="Home · UnivariateSplines.jl"/><meta property="twitter:title" content="Home · UnivariateSplines.jl"/><meta name="description" content="Documentation for UnivariateSplines.jl."/><meta property="og:description" content="Documentation for UnivariateSplines.jl."/><meta property="twitter:description" content="Documentation for UnivariateSplines.jl."/><meta property="og:url" content="https://SuiteSplines.github.io/UnivariateSplines.jl/"/><meta property="twitter:url" content="https://SuiteSplines.github.io/UnivariateSplines.jl/"/><link rel="canonical" href="https://SuiteSplines.github.io/UnivariateSplines.jl/"/><script data-outdated-warner src="assets/warner.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.050/juliamono.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL="."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="assets/documenter.js"></script><script src="search_index.js"></script><script src="siteinfo.js"></script><script src="../versions.js"></script><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/catppuccin-mocha.css" data-theme-name="catppuccin-mocha"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/catppuccin-macchiato.css" data-theme-name="catppuccin-macchiato"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/catppuccin-frappe.css" data-theme-name="catppuccin-frappe"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/catppuccin-latte.css" data-theme-name="catppuccin-latte"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/documenter-dark.css" data-theme-name="documenter-dark" data-theme-primary-dark/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/documenter-light.css" data-theme-name="documenter-light" data-theme-primary/><script src="assets/themeswap.js"></script></head><body><div id="documenter"><nav class="docs-sidebar"><div class="docs-package-name"><span class="docs-autofit"><a href>UnivariateSplines.jl</a></span></div><button class="docs-search-query input is-rounded is-small is-clickable my-2 mx-auto py-1 px-2" id="documenter-search-query">Search docs (Ctrl + /)</button><ul class="docs-menu"><li class="is-active"><a class="tocitem" href>Home</a><ul class="internal"><li><a class="tocitem" href="#Index"><span>Index</span></a></li></ul></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><a class="docs-sidebar-button docs-navbar-link fa-solid fa-bars is-hidden-desktop" id="documenter-sidebar-button" href="#"></a><nav class="breadcrumb"><ul class="is-hidden-mobile"><li class="is-active"><a href>Home</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href>Home</a></li></ul></nav><div class="docs-right"><a class="docs-navbar-link" href="https://github.com/SuiteSplines/UnivariateSplines.jl" title="View the repository on GitHub"><span class="docs-icon fa-brands"></span><span class="docs-label is-hidden-touch">GitHub</span></a><a class="docs-navbar-link" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/main/docs/src/index.md" title="Edit source on GitHub"><span class="docs-icon fa-solid"></span></a><a class="docs-settings-button docs-navbar-link fa-solid fa-gear" id="documenter-settings-button" href="#" title="Settings"></a><a class="docs-article-toggle-button fa-solid fa-chevron-up" id="documenter-article-toggle-button" href="javascript:;" title="Collapse all docstrings"></a></div></header><article class="content" id="documenter-page"><h1 id="UnivariateSplines"><a class="docs-heading-anchor" href="#UnivariateSplines">UnivariateSplines</a><a id="UnivariateSplines-1"></a><a class="docs-heading-anchor-permalink" href="#UnivariateSplines" title="Permalink"></a></h1><h2 id="Index"><a class="docs-heading-anchor" href="#Index">Index</a><a id="Index-1"></a><a class="docs-heading-anchor-permalink" href="#Index" title="Permalink"></a></h2><ul><li><a href="#UnivariateSplines.Bspline"><code>UnivariateSplines.Bspline</code></a></li><li><a href="#UnivariateSplines.BsplineBasis"><code>UnivariateSplines.BsplineBasis</code></a></li><li><a href="#UnivariateSplines.BsplineEvaluationCache"><code>UnivariateSplines.BsplineEvaluationCache</code></a></li><li><a href="#UnivariateSplines.BsplineSupport"><code>UnivariateSplines.BsplineSupport</code></a></li><li><a href="#UnivariateSplines.GeneralizedGaussrule"><code>UnivariateSplines.GeneralizedGaussrule</code></a></li><li><a href="#UnivariateSplines.KnotSpanIndices"><code>UnivariateSplines.KnotSpanIndices</code></a></li><li><a href="#UnivariateSplines.KnotVector"><code>UnivariateSplines.KnotVector</code></a></li><li><a href="#UnivariateSplines.SpanIndex"><code>UnivariateSplines.SpanIndex</code></a></li><li><a href="#UnivariateSplines.SplineSpace"><code>UnivariateSplines.SplineSpace</code></a></li><li><a href="#UnivariateSplines.Support"><code>UnivariateSplines.Support</code></a></li><li><a href="#UnivariateSplines.WeightedQuadrule"><code>UnivariateSplines.WeightedQuadrule</code></a></li><li><a href="#IgaBase.dimsplinespace-Tuple{Integer, NonDecreasingVector}"><code>IgaBase.dimsplinespace</code></a></li><li><a href="#IgaBase.refine-Tuple{NonDecreasingVector, hRefinement}"><code>IgaBase.refine</code></a></li><li><a href="#IgaBase.refine-Tuple{Integer, hRefinement}"><code>IgaBase.refine</code></a></li><li><a href="#UnivariateSplines.approximate_collocation_inverse-Union{Tuple{T}, Tuple{Int64, NonDecreasingVector{T}}} where T&lt;:Real"><code>UnivariateSplines.approximate_collocation_inverse</code></a></li><li><a href="#UnivariateSplines.approximate_l2_inverse-Union{Tuple{T}, Tuple{Int64, AbstractVector{T}, Int64}} where T&lt;:Real"><code>UnivariateSplines.approximate_l2_inverse</code></a></li><li><a href="#UnivariateSplines.bezier_extraction_operator-Union{Tuple{T}, Tuple{Integer, NonDecreasingVector{T}}} where T&lt;:Real"><code>UnivariateSplines.bezier_extraction_operator</code></a></li><li><a href="#UnivariateSplines.bspline_integral_value-Tuple{Integer, NonDecreasingVector, Integer}"><code>UnivariateSplines.bspline_integral_value</code></a></li><li><a href="#UnivariateSplines.bspline_interpolation_matrix"><code>UnivariateSplines.bspline_interpolation_matrix</code></a></li><li><a href="#UnivariateSplines.bsplinebasisfuns"><code>UnivariateSplines.bsplinebasisfuns</code></a></li><li><a href="#UnivariateSplines.ders_bspline_interpolation_matrix"><code>UnivariateSplines.ders_bspline_interpolation_matrix</code></a></li><li><a href="#UnivariateSplines.dersbsplinebasisfuns"><code>UnivariateSplines.dersbsplinebasisfuns</code></a></li><li><a href="#UnivariateSplines.distribute_points-Tuple{SplineSpace, SplineSpace}"><code>UnivariateSplines.distribute_points</code></a></li><li><a href="#UnivariateSplines.extraction_operator-Tuple{Integer, NonDecreasingVector}"><code>UnivariateSplines.extraction_operator</code></a></li><li><a href="#UnivariateSplines.findspan-Union{Tuple{T}, Tuple{Integer, NonDecreasingVector{T}, T}} where T&lt;:Real"><code>UnivariateSplines.findspan</code></a></li><li><a href="#UnivariateSplines.grevillepoints-Tuple{Integer, NonDecreasingVector, Integer}"><code>UnivariateSplines.grevillepoints</code></a></li><li><a href="#UnivariateSplines.h_refinement_operator!-Union{Tuple{T}, Tuple{Integer, NonDecreasingVector{T}, Integer, T}} where T&lt;:Real"><code>UnivariateSplines.h_refinement_operator!</code></a></li><li><a href="#UnivariateSplines.normalization_weights-Union{Tuple{IncreasingVector{T}}, Tuple{T}} where T&lt;:Real"><code>UnivariateSplines.normalization_weights</code></a></li><li><a href="#UnivariateSplines.nquadpoints-Tuple{SplineSpace, SplineSpace}"><code>UnivariateSplines.nquadpoints</code></a></li><li><a href="#UnivariateSplines.num_elements-Tuple{NonDecreasingVector}"><code>UnivariateSplines.num_elements</code></a></li><li><a href="#UnivariateSplines.onebasisfuneval-Union{Tuple{T}, Tuple{NonDecreasingVector{T}, T}} where T&lt;:Real"><code>UnivariateSplines.onebasisfuneval</code></a></li><li><a href="#UnivariateSplines.refinement_operator-Tuple{Integer, NonDecreasingVector, IgaBase.AbstractRefinement}"><code>UnivariateSplines.refinement_operator</code></a></li><li><a href="#UnivariateSplines.solve_leastnorm_without_constraints-Union{Tuple{T}, Tuple{Matrix{T}, Vector{T}}, Tuple{Matrix{T}, Vector{T}, Any}} where T&lt;:Real"><code>UnivariateSplines.solve_leastnorm_without_constraints</code></a></li><li><a href="#UnivariateSplines.table_required_points-Tuple{SplineSpace, SplineSpace}"><code>UnivariateSplines.table_required_points</code></a></li><li><a href="#UnivariateSplines.two_scale_operator-Union{Tuple{T}, Tuple{Integer, NonDecreasingVector{T}, Integer, NonDecreasingVector{T}}} where T&lt;:Real"><code>UnivariateSplines.two_scale_operator</code></a></li><li><a href="#UnivariateSplines.unit_integral_rescaling-Tuple{Integer, NonDecreasingVector, Integer}"><code>UnivariateSplines.unit_integral_rescaling</code></a></li><li><a href="#UnivariateSplines.wquadweights!-Union{Tuple{T}, Tuple{SparseArrays.SparseMatrixCSC{T}, SparseArrays.SparseMatrixCSC{T}, SparseArrays.SparseMatrixCSC{T}, Vector{T}}} where T&lt;:Real"><code>UnivariateSplines.wquadweights!</code></a></li></ul><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="IgaBase.dimsplinespace-Tuple{Integer, NonDecreasingVector}" href="#IgaBase.dimsplinespace-Tuple{Integer, NonDecreasingVector}"><code>IgaBase.dimsplinespace</code></a> — <span class="docstring-category">Method</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">dimsplinespace(p, U)</code></pre><p>Compute the dimension of the spline space defined by degree <span>$p$</span> and knotsvector <span>$U$</span>.</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/base.jl#L27-L32">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="IgaBase.refine-Tuple{Integer, hRefinement}" href="#IgaBase.refine-Tuple{Integer, hRefinement}"><code>IgaBase.refine</code></a> — <span class="docstring-category">Method</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">refine(p::Degree, R::AbstractRefinement)</code></pre><p>Change in polynomial degree based on the refinement type.</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/refinement.jl#L8-L12">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="IgaBase.refine-Tuple{NonDecreasingVector, hRefinement}" href="#IgaBase.refine-Tuple{NonDecreasingVector, hRefinement}"><code>IgaBase.refine</code></a> — <span class="docstring-category">Method</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">refine(p::KnotVector, R::AbstractRefinement)</code></pre><p>Change in knot vector based on the refinement type.</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/refinement.jl#L18-L22">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.approximate_collocation_inverse-Union{Tuple{T}, Tuple{Int64, NonDecreasingVector{T}}} where T&lt;:Real" href="#UnivariateSplines.approximate_collocation_inverse-Union{Tuple{T}, Tuple{Int64, NonDecreasingVector{T}}} where T&lt;:Real"><code>UnivariateSplines.approximate_collocation_inverse</code></a> — <span class="docstring-category">Method</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">approximate_collocation_inverse(p, U)
+approximate_collocation_inverse(p, U, k1)</code></pre><p>Compute an approximate inverse <span>$\mathsf{A} ≈ \mathsf{B}^{-1}$</span>, where <span>$\mathsf{B}$</span> is the consistent B-spline interpolation matrix. The approximation is of order <span>$k_1 \leq p+1$</span>. The quasi-interpolant is designed to reproduce polynomials</p><p class="math-container">\[    \sum_{i=1}^n \mu_i(x^k) B_{i,p}(x) = x^k  \quad \text{for } k=0,1,...,k_1-1\]</p><p>and is based on the following paper</p><p>T. Lyche and L. L. Schumaker. Local spline approximation methods. Journal of Approximation Theory, 15(4):294-325, Dec. 1975.</p><p><strong>Examples:</strong></p><pre><code class="language-julia-repl hljs">julia&gt; p  = Degree(3);
+
+julia&gt; U  = KnotVector([0.0,1.0,1.5,2.5,3.0], [p+1,1,1,2,p+1]);
+
+julia&gt; y  = grevillepoints(p, U);</code></pre><p>The approximate collocation inverse, using full approximation order <span>$k_1=p+1$</span> and the consistent collocation matrix are computed as follows</p><pre><code class="language-julia-repl hljs">julia&gt; A = approximate_collocation_inverse(p, U, p+1);
+
+julia&gt; B = bspline_interpolation_matrix(p, U, y, 1)[1];</code></pre><p>It can be verified that the quasi-interpolant reproduces constants, linears, quadratic and cubic polynomials</p><pre><code class="language-julia-repl hljs">julia&gt; B * A * (y.^0) ≈ y.^0
+true
+
+julia&gt; B * A * (y.^1) ≈ y.^1
+true
+
+julia&gt; B * A * (y.^2) ≈ y.^2
+true
+
+julia&gt; B * A * (y.^3) ≈ y.^3
+true</code></pre></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/quasiinterpolation.jl#L5-L50">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.approximate_l2_inverse-Union{Tuple{T}, Tuple{Int64, AbstractVector{T}, Int64}} where T&lt;:Real" href="#UnivariateSplines.approximate_l2_inverse-Union{Tuple{T}, Tuple{Int64, AbstractVector{T}, Int64}} where T&lt;:Real"><code>UnivariateSplines.approximate_l2_inverse</code></a> — <span class="docstring-category">Method</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">approximate_l2_inverse(p, U, k1)</code></pre><p>Compute an approximate inverse <span>$\mathsf{S} ≈ \mathsf{M}^{-1}$</span>, where <span>$\mathsf{M}$</span> is the consisten B-spline mass matrix. The approximation is of order <span>$k_1 \leq p+1$</span>. The <span>$L^2$</span> quasi-interpolant is designed to reproduce polynomials</p><p class="math-container">\[    \sum_{i=1}^n \mu_i(x^k) B_{i,p}(x) = x^k  \quad \text{for } k=0,1,...,k_1-1\]</p><p>and is based on the following paper</p><p>Chui, Charles K., Wenjie He, and Joachim Stöckler. &quot;Nonstationary tight wavelet frames, I: Bounded intervals.&quot; Applied and Computational Harmonic Analysis 17.2 (2004): 141-197.</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/quasiinterpolation.jl#L191-L205">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.bezier_extraction_operator-Union{Tuple{T}, Tuple{Integer, NonDecreasingVector{T}}} where T&lt;:Real" href="#UnivariateSplines.bezier_extraction_operator-Union{Tuple{T}, Tuple{Integer, NonDecreasingVector{T}}} where T&lt;:Real"><code>UnivariateSplines.bezier_extraction_operator</code></a> — <span class="docstring-category">Method</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">bezier_extraction_operator(p, U)</code></pre><p>Compute the Bézier extraction operators corresponding to a B-spline basis of polynomial degree <span>$p$</span> and knot vector <span>$U$</span>. The output is a 3-dimensional array <span>$\mathsf{C} \in \mathbb{R}^{(p+1) \times (p+1) \times n_{el}}$</span>.</p><p>The implementation is based on the following paper</p><p>Borden, Michael J., et al. &quot;Isogeometric finite element data structures based on Bézier extraction of NURBS.&quot; International Journal for Numerical Methods in Engineering 87.1‐5 (2011): 15-47.</p><p><strong>Examples:</strong></p><pre><code class="language-julia-repl hljs">julia&gt; p = Degree(2); U = KnotVector([0.0,0.0,0.0,1.0,3.0,3.0,4.0,4.0,4.0]);
+
+julia&gt; bezier_extraction_operator(p, U)
+3×3×3 Array{Float64, 3}:
+[:, :, 1] =
+ 1.0  0.0       0.0
+ 0.0  1.0       0.0
+ 0.0  0.666667  0.333333
+
+[:, :, 2] =
+ 0.666667  0.333333  0.0
+ 0.0       1.0       0.0
+ 0.0       0.0       1.0
+
+[:, :, 3] =
+ 1.0  0.0  0.0
+ 0.0  1.0  0.0
+ 0.0  0.0  1.0</code></pre></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/refinement.jl#L42-L76">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.bspline_integral_value-Tuple{Integer, NonDecreasingVector, Integer}" href="#UnivariateSplines.bspline_integral_value-Tuple{Integer, NonDecreasingVector, Integer}"><code>UnivariateSplines.bspline_integral_value</code></a> — <span class="docstring-category">Method</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">bspline_integral_value(p, U, i::Int)
+bspline_integral_value(p, U)</code></pre><p>Compute the integral of a b-spline function defined by degree <code>p</code> and knotvector <code>U</code>.</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/base.jl#L181-L187">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.bspline_interpolation_matrix" href="#UnivariateSplines.bspline_interpolation_matrix"><code>UnivariateSplines.bspline_interpolation_matrix</code></a> — <span class="docstring-category">Function</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">bspline_interpolation_matrix(p, U, i, x, nout=1)</code></pre><p>Given the polynomial degree <span>$p$</span> and knot-vector <span>$U$</span> compute the collocation matrices of the B-spline basis functions sampled at a set of points <span>$x$</span>. The output is a set of sparse matrices whose rows correspond to the evaluation points and whose columns are associated with the B-spline degrees of freedom.</p><p><strong>Examples:</strong></p><pre><code class="language-julia-repl hljs">julia&gt; p = Degree(2);
+
+julia&gt; U = KnotVector([0.0,1.0,1.5,2.5,3.0], [3,1,1,2,3]);
+
+julia&gt; x = IncreasingVector([0.5,1.5,2.75]);
+
+julia&gt; B = bspline_interpolation_matrix(p, U, x, p+1);</code></pre><p>The interpolation matrix for quadratic B-splines is</p><pre><code class="language-julia-repl hljs">julia&gt; B[1]
+3×7 SparseArrays.SparseMatrixCSC{Float64, Int64} with 9 stored entries:
+ 0.25  0.583333  0.166667   ⋅         ⋅     ⋅    ⋅ 
+  ⋅     ⋅        0.666667  0.333333  0.0    ⋅    ⋅ 
+  ⋅     ⋅         ⋅         ⋅        0.25  0.5  0.25</code></pre><p>The interpolation matrix for linear and constant B-splines is given by</p><pre><code class="language-julia-repl hljs">julia&gt; B[2]
+3×6 SparseArrays.SparseMatrixCSC{Float64, Int64} with 6 stored entries:
+ 0.5  0.5   ⋅    ⋅    ⋅    ⋅ 
+  ⋅    ⋅   1.0  0.0   ⋅    ⋅ 
+  ⋅    ⋅    ⋅    ⋅   0.5  0.5
+
+julia&gt; B[3]
+3×5 SparseArrays.SparseMatrixCSC{Float64, Int64} with 3 stored entries:
+ 1.0   ⋅    ⋅    ⋅    ⋅ 
+  ⋅    ⋅   1.0   ⋅    ⋅ 
+  ⋅    ⋅    ⋅    ⋅   1.0</code></pre><p>It can be easily verified that the B-splines satisfy a partition of unity</p><pre><code class="language-julia-repl hljs">julia&gt; sum(B[1],dims=2)
+3×1 Matrix{Float64}:
+ 1.0
+ 1.0
+ 1.0
+
+julia&gt; sum(B[2],dims=2)
+3×1 Matrix{Float64}:
+ 1.0
+ 1.0
+ 1.0
+
+julia&gt; sum(B[3],dims=2)
+3×1 Matrix{Float64}:
+ 1.0
+ 1.0
+ 1.0</code></pre><p>The collocation matrices can be used to solve an interpolation problem or a PDE using the collocation method. For example, the interpolation matrix evaluated at the Greville points can be computed as follows</p><pre><code class="language-julia-repl hljs">julia&gt; x = grevillepoints(p, U);
+
+julia&gt; B = bspline_interpolation_matrix(p, U, x, p+1)[1]
+7×7 SparseArrays.SparseMatrixCSC{Float64, Int64} with 21 stored entries:
+ 1.0   0.0        0.0        ⋅          ⋅     ⋅    ⋅ 
+ 0.25  0.583333   0.166667   ⋅          ⋅     ⋅    ⋅ 
+  ⋅    0.0833333  0.833333  0.0833333   ⋅     ⋅    ⋅ 
+  ⋅     ⋅         0.166667  0.583333   0.25   ⋅    ⋅ 
+  ⋅     ⋅          ⋅         ⋅         1.0   0.0  0.0
+  ⋅     ⋅          ⋅         ⋅         0.25  0.5  0.25
+  ⋅     ⋅          ⋅         ⋅         0.0   0.0  1.0</code></pre><p>The matrix <span>$\mathsf{B}$</span> can then be used to interpolate a univariate function. For example, up to quadratic polynomials are exactly reproduced</p><pre><code class="language-julia-repl hljs"># sample grid to test polynomial reproduction
+julia&gt; y = global_insert(x, 4);
+
+julia&gt; C = bspline_interpolation_matrix(p, U, y, 1)[1];
+
+julia&gt; C * (B \ x.^0) ≈ y.^0
+true
+
+julia&gt; C * (B \ x.^1) ≈ y.^1
+true
+
+julia&gt; C * (B \ x.^2) ≈ y.^2
+true</code></pre><p>Here matrix <span>$\mathsf{C}$</span> evaluates the B-spline at a refined partition <span>$y$</span>.</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/interpolation.jl#L5-L101">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.bsplinebasisfuns" href="#UnivariateSplines.bsplinebasisfuns"><code>UnivariateSplines.bsplinebasisfuns</code></a> — <span class="docstring-category">Function</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">bsplinebasisfuns(p, U, i::Integer, x::T, nout=1)
+bsplinebasisfuns(p, U, x::T, nout=1)</code></pre><p>Compute the <span>$p+1$</span> non-zero B-spline basis-functions at site <span>$x \in [U_{i},U_{i+1})$</span>. The output is a matrix where column <span>$j$</span> (rows <span>$1:p+2-j$</span>), for <span>$j=1,...,n_{out}$</span> correspond to the <span>$p+2-j$</span> non-zero B-spline basis functions of degree <span>$p+1-j$</span>. The remaining entries correspond to supports. If the active knot-span is not provided then it will be computed.</p><p><strong>Examples:</strong></p><pre><code class="language-julia-repl hljs">julia&gt; p = Degree(2);
+
+julia&gt; U = KnotVector([0.0,0.0,0.0,1.0,2.0,2.0,2.0]);
+
+julia&gt; x = 1.5
+1.5
+
+julia&gt; span = findspan(p, U, x)
+4
+
+julia&gt; B = bsplinebasisfuns(p, U, span, x, p+1)
+3×3 Matrix{Float64}:
+ 0.125  0.5  1.0
+ 0.625  0.5  1.0
+ 0.25   1.0  2.0</code></pre><p>The knot span index can be omited, in which case it is computed on the fly.</p><pre><code class="language-julia-repl hljs">julia&gt; bsplinebasisfuns(p, U, x, p+1)
+3×3 Matrix{Float64}:
+ 0.125  0.5  1.0
+ 0.625  0.5  1.0
+ 0.25   1.0  2.0</code></pre><p>By prescribing a vector of <span>$m$</span> sites <span>$x \in \mathbb{R}^m$</span> we can compute the B-splines at more than one point. The function can be called with or without prescribing the knot-span index</p><pre><code class="nohighlight hljs">bsplinebasisfuns(p, U, span::Vector{Integer}, u::Vector{T}, nout=1)
+bsplinebasisfuns(p, U, u::SortedSequence{T}, nout=1)</code></pre><p>The output is a 3-dimensional array <span>$B \in \mathbb{R}^{(p+1) \times m \times n_{out}}$</span>.</p><p><strong>Examples:</strong></p><pre><code class="language-julia-repl hljs">julia&gt; x = IncreasingVector([0.5, 1.5]);
+
+julia&gt; span = findspan(p, U, x)
+2-element NonDecreasingVector{Int64}:
+ 3
+ 4
+
+julia&gt; bsplinebasisfuns(p, U, span, x, p+1)
+3×2×3 Array{Float64, 3}:
+[:, :, 1] =
+ 0.25   0.125
+ 0.625  0.625
+ 0.125  0.25
+
+[:, :, 2] =
+ 0.5  0.5
+ 0.5  0.5
+ 2.0  1.0
+
+[:, :, 3] =
+ 1.0  1.0
+ 1.0  1.0
+ 1.0  2.0</code></pre><p>Alternatively, the non-vanishing B-splines up to and including degree <span>$p$</span> can be computed at <span>$n_{el}$</span> non-zero knot-spans (elements) with <span>$m$</span> sites each, that is, <span>$x \in \mathbb{R}^{m \times n_{el}}$</span>. Again, the function can be called with or without prescribing the knot-span index</p><pre><code class="nohighlight hljs">bsplinebasisfuns(p, U, span::Vector{Int64}, u::Matrix{T}, nout=1)
+bsplinebasisfuns(p, U, u::Matrix{T}, nout=1)</code></pre><p>The output is a 4-dimensional array <span>$B \in \mathbb{R}^{(p+1) \times m \times n_{el} \times n_{out}}$</span>.</p><p><strong>Examples:</strong></p><pre><code class="language-julia-repl hljs">julia&gt; x = [0.25 1.25;
+            0.75 1.75];
+
+julia&gt; bsplinebasisfuns(p, U, x, p+1)
+3×2×2×3 Array{Float64, 4}:
+[:, :, 1, 1] =
+ 0.5625   0.0625
+ 0.40625  0.65625
+ 0.03125  0.28125
+
+[:, :, 2, 1] =
+ 0.28125  0.03125
+ 0.65625  0.40625
+ 0.0625   0.5625
+
+[:, :, 1, 2] =
+ 0.75  0.25
+ 0.25  0.75
+ 2.0   2.0
+
+[:, :, 2, 2] =
+ 0.75  0.25
+ 0.25  0.75
+ 1.0   1.0
+
+[:, :, 1, 3] =
+ 1.0  1.0
+ 1.0  1.0
+ 1.0  1.0
+
+[:, :, 2, 3] =
+ 1.0  1.0
+ 1.0  1.0
+ 2.0  2.0</code></pre></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/bsplinebasisfuns.jl#L61-L181">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.ders_bspline_interpolation_matrix" href="#UnivariateSplines.ders_bspline_interpolation_matrix"><code>UnivariateSplines.ders_bspline_interpolation_matrix</code></a> — <span class="docstring-category">Function</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">ders_bspline_interpolation_matrix(p, U, i, x, nout=1)</code></pre><p>Given the polynomial degree <span>$p$</span> and knot-vector <span>$U$</span> compute the collocation matrices of the first <span>$n_{out}$</span> derivatives of the B-spline basis functions sampled at a set of points <span>$x$</span>. The output is a set of sparse matrices whose rows correspond to the evaluation points and whose columns are associated with the B-spline degrees of freedom.</p><p><strong>Examples:</strong></p><pre><code class="language-julia-repl hljs">julia&gt; p = Degree(2);
+
+julia&gt; U = KnotVector([0.0,1.0,1.5,2.5,3.0], [3,1,1,2,3]);
+
+julia&gt; x = IncreasingVector([0.5,1.5,2.75]);
+
+julia&gt; B = ders_bspline_interpolation_matrix(p, U, x, p+1);</code></pre><p>The output is a set of <code>SparseMatrixCSC</code> matrices. For example the B-splines evaluate at points <span>$x$</span> are</p><pre><code class="language-julia-repl hljs">julia&gt; B[1]
+3×7 SparseArrays.SparseMatrixCSC{Float64, Int64} with 9 stored entries:                       
+ 0.25  0.583333  0.166667   ⋅         ⋅     ⋅    ⋅                                            
+  ⋅     ⋅        0.666667  0.333333  0.0    ⋅    ⋅                                            
+  ⋅     ⋅         ⋅         ⋅        0.25  0.5  0.25                                          </code></pre><p>Derivatives of quadratic B-splines evaluated at <span>$x$</span></p><pre><code class="language-julia-repl hljs">julia&gt; B[2]
+3×7 SparseArrays.SparseMatrixCSC{Float64, Int64} with 9 stored entries:
+ -1.0  0.333333   0.666667   ⋅         ⋅    ⋅    ⋅ 
+   ⋅    ⋅        -1.33333   1.33333   0.0   ⋅    ⋅ 
+   ⋅    ⋅          ⋅         ⋅       -2.0  0.0  2.0</code></pre><p>Second derivatives of quadratic B-splines evaluated at <span>$x$</span></p><pre><code class="language-julia-repl hljs">julia&gt; B[3]
+3×7 SparseArrays.SparseMatrixCSC{Float64, Int64} with 9 stored entries:
+ 2.0  -3.33333  1.33333    ⋅        ⋅      ⋅    ⋅ 
+  ⋅     ⋅       1.33333  -3.33333  2.0     ⋅    ⋅ 
+  ⋅     ⋅        ⋅         ⋅       8.0  -16.0  8.0</code></pre></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/interpolation.jl#L113-L157">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.dersbsplinebasisfuns" href="#UnivariateSplines.dersbsplinebasisfuns"><code>UnivariateSplines.dersbsplinebasisfuns</code></a> — <span class="docstring-category">Function</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">dersbsplinebasisfuns(p, U, span::Int, u::T, nout=1)
+dersbsplinebasisfuns(p, U, u::T, nout=1)</code></pre><p>Compute the non-vanishing B-spline basis-functions of degree <span>$p$</span> and their <span>$n_{out}-1$</span>&#39;th order derivatives at the site <span>$x$</span>. The output is a matrix <span>$B \in \mathbb{R}^{(p+1) \times n_{out}}$</span> where the <span>$i$</span>&#39;th row corresponds to the <span>$i$</span>&#39;th non-vanishing B-spline at <span>$x$</span> and the <span>$j$</span>&#39;th column corresponds to the <span>$j-1$</span>&#39;th derivative.</p><p>The implementation of this function is based on</p><p>Piegl, Les, and Wayne Tiller. The NURBS book. Springer Science &amp; Business Media, 2012.</p><p><strong>Examples:</strong></p><pre><code class="language-julia-repl hljs">julia&gt; p = Degree(2);
+
+julia&gt; U = KnotVector([0.0,0.0,0.0,1.0,2.0,2.0,2.0]);
+
+julia&gt; x = 1.5;
+
+julia&gt; span = findspan(p, U, x)
+4
+
+julia&gt; dersbsplinebasisfuns(p, U, span, x, p+1)
+3×3 Matrix{Float64}:
+ 0.125  -0.5   1.0
+ 0.625  -0.5  -3.0
+ 0.25    1.0   2.0</code></pre><p><code>dersbsplinebasisfuns</code> can also be called without providing the span-indices, in which case they will be calculated on the fly.</p><pre><code class="language-julia-repl hljs">julia&gt; dersbsplinebasisfuns(p, U, x, p+1)
+3×3 Matrix{Float64}:
+ 0.125  -0.5   1.0
+ 0.625  -0.5  -3.0
+ 0.25    1.0   2.0</code></pre><p>By prescribing a vector of <span>$m$</span> sites <span>$x \in \mathbb{R}^m$</span> we can compute the B-splines and their derivatives at more than one point.  The function can be called with or without prescribing the knot-span index</p><pre><code class="nohighlight hljs">dersbsplinebasisfuns(p, U, span::Vector{Integer}, u::Vector{T}, nout=1)
+dersbsplinebasisfuns(p, U, u::SortedSequence{T}, nout=1)</code></pre><p>The output is a 3-dimensional array <span>$B \in \mathbb{R}^{(p+1) \times m \times n_{out}}$</span>.</p><p><strong>Examples:</strong></p><pre><code class="language-julia-repl hljs">julia&gt; x = IncreasingVector([0.5, 1.5]);
+
+julia&gt; span = findspan(p, U, x)
+2-element NonDecreasingVector{Int64}:
+ 3
+ 4
+
+julia&gt; dersbsplinebasisfuns(p, U, span, x, p+1)
+3×2×3 Array{Float64, 3}:
+[:, :, 1] =
+ 0.25   0.125
+ 0.625  0.625
+ 0.125  0.25
+
+[:, :, 2] =
+ -1.0  -0.5
+  0.5  -0.5
+  0.5   1.0
+
+[:, :, 3] =
+  2.0   1.0
+ -3.0  -3.0
+  1.0   2.0</code></pre><p>Alternatively, the non-vanishing derivatives of the B-splines can be computed at <span>$n_{el}$</span> non-zero knot-spans (elements) with <span>$m$</span> sites each, that is, <span>$x \in \mathbb{R}^{m \times n_{el}}$</span>. Again, the function can be called with or without prescribing the knot-span index</p><pre><code class="nohighlight hljs">dersbsplinebasisfuns(p, U, span::Vector{Int64}, u::Matrix{T}, nout=1)
+dersbsplinebasisfuns(p, U, u::Matrix{T}, nout=1)</code></pre><p>The output is a 4-dimensional array <span>$B \in \mathbb{R}^{(p+1) \times m \times n_{el} \times n_{out}}$</span>.</p><p><strong>Examples:</strong></p><pre><code class="language-julia-repl hljs">julia&gt; x = [0.25 1.25;
+            0.75 1.75];
+
+julia&gt; dersbsplinebasisfuns(p, U, x, p+1)
+3×2×2×3 Array{Float64, 4}:
+[:, :, 1, 1] =
+ 0.5625   0.0625
+ 0.40625  0.65625
+ 0.03125  0.28125
+
+[:, :, 2, 1] =
+ 0.28125  0.03125
+ 0.65625  0.40625
+ 0.0625   0.5625
+
+[:, :, 1, 2] =
+ -1.5   -0.5
+  1.25  -0.25
+  0.25   0.75
+
+[:, :, 2, 2] =
+ -0.75  -0.25
+  0.25  -1.25
+  0.5    1.5
+
+[:, :, 1, 3] =
+  2.0   2.0
+ -3.0  -3.0
+  1.0   1.0
+
+[:, :, 2, 3] =
+  1.0   1.0
+ -3.0  -3.0
+  2.0   2.0</code></pre></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/dersbsplinebasisfuns.jl#L3-L125">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.distribute_points-Tuple{SplineSpace, SplineSpace}" href="#UnivariateSplines.distribute_points-Tuple{SplineSpace, SplineSpace}"><code>UnivariateSplines.distribute_points</code></a> — <span class="docstring-category">Method</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">distribute_points(S::SplineSpace, V::SplineSpace; add_boundary_points::Bool=false)</code></pre><p>Compute distribution of quadrature points in weigthed quadrature with a test-space <span>$V$</span> and target space for quadrature <span>$S$</span>. The nodes are distribute in such a way that all conditions for exact quadrature are satisfied with a minimum number of points.</p><p>The distribution of quadrature points in weighted quadrature is based on the following paper.</p><p>Hiemstra, René R., et al. &quot;Fast formation and assembly of finite element matrices with application to isogeometric linear elasticity.&quot; Computer Methods in Applied Mechanics and Engineering 355 (2019): 234-260.</p><p><strong>Examples:</strong></p><pre><code class="language-julia-repl hljs">julia&gt; S = SplineSpace(2, IncreasingVector([0.0,1.0,2.0,3.0]), [3,2,2,3]);
+
+julia&gt; V = SplineSpace(2, IncreasingVector([0.0,1.0,2.0,3.0]), [3,1,1,3]);
+
+julia&gt; UnivariateSplines.distribute_points(S, V)
+8-element IncreasingVector{Float64}:
+ 0.16666666666666666
+ 0.5
+ 0.8333333333333334
+ 1.25
+ 1.75
+ 2.1666666666666665
+ 2.5
+ 2.8333333333333335</code></pre></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/weightedquad.jl#L152-L183">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.extraction_operator-Tuple{Integer, NonDecreasingVector}" href="#UnivariateSplines.extraction_operator-Tuple{Integer, NonDecreasingVector}"><code>UnivariateSplines.extraction_operator</code></a> — <span class="docstring-category">Method</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">extraction_operator(p::Degree, U::KnotVector; [cperiodic, cleft, cright])</code></pre><p>Compute an extraction operator that creates a subspace of the <code>SplineSpace</code> with for example peroidicity built-in.</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/spaces.jl#L126-L131">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.findspan-Union{Tuple{T}, Tuple{Integer, NonDecreasingVector{T}, T}} where T&lt;:Real" href="#UnivariateSplines.findspan-Union{Tuple{T}, Tuple{Integer, NonDecreasingVector{T}, T}} where T&lt;:Real"><code>UnivariateSplines.findspan</code></a> — <span class="docstring-category">Method</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">findspan(p, U, u)</code></pre><p>Given polynomial degree <span>$p$</span> and knotvector <span>$U$</span> determine the knot span index <span>$i$</span> of a point <span>$x$</span> such that <span>$u \in [U_i, U_{i+1})$</span>.</p><p><strong>Examples:</strong></p><pre><code class="language-julia-repl hljs">julia&gt; p = Degree(2)
+2
+
+julia&gt; U = KnotVector([0.0,1.0,1.5,2.5,3.0],[3,1,1,2,3])
+10-element NonDecreasingVector{Float64}:
+ 0.0
+ 0.0
+ 0.0
+ 1.0
+ 1.5
+ 2.5
+ 2.5
+ 3.0
+ 3.0
+ 3.0
+
+julia&gt; x = 2.0
+2.0
+
+julia&gt; span = findspan(p, U, x)
+5
+
+julia&gt; U[span] ≤ x &lt; U[span+1]
+true</code></pre><p>It is also possible to compute the knot-spans of all values in an &#39;IncreasingVector{T}&#39;</p><pre><code class="language-julia-repl hljs">julia&gt; x = IncreasingVector([0.25, 0.75, 1.0, 1.25, 2.5, 2.75]);
+
+julia&gt; span = findspan(p, U, x)
+6-element NonDecreasingVector{Int64}:
+ 3
+ 3
+ 4
+ 4
+ 7
+ 7</code></pre></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/base.jl#L82-L129">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.grevillepoints-Tuple{Integer, NonDecreasingVector, Integer}" href="#UnivariateSplines.grevillepoints-Tuple{Integer, NonDecreasingVector, Integer}"><code>UnivariateSplines.grevillepoints</code></a> — <span class="docstring-category">Method</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">grevillepoints(p, U, i)
+grevillepoints(p, U)</code></pre><p>Compute the <span>$i$</span>&#39;th Greville Absissa corresponding to the <span>$i$</span>&#39;th B-spline defined by degree &#39;p&#39; and knotvector &#39;U&#39; of spline space.</p><p><strong>Examples:</strong></p><pre><code class="language-julia-repl hljs">julia&gt; p = Degree(2);
+
+julia&gt; U = KnotVector([0.0,1.0,2.5,3.0], [3,1,2,1])
+7-element NonDecreasingVector{Float64}:
+ 0.0
+ 0.0
+ 0.0
+ 1.0
+ 2.5
+ 2.5
+ 3.0
+
+julia&gt; grevillepoints(p, U, 2)
+0.5
+
+julia&gt; grevillepoints(p, U)
+4-element IncreasingVector{Float64}:
+ 0.0
+ 0.5
+ 1.75
+ 2.5</code></pre></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/base.jl#L42-L73">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.h_refinement_operator!-Union{Tuple{T}, Tuple{Integer, NonDecreasingVector{T}, Integer, T}} where T&lt;:Real" href="#UnivariateSplines.h_refinement_operator!-Union{Tuple{T}, Tuple{Integer, NonDecreasingVector{T}, Integer, T}} where T&lt;:Real"><code>UnivariateSplines.h_refinement_operator!</code></a> — <span class="docstring-category">Method</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">h_refinement_operator!(p::Degree, U::KnotVector{T}, u::AbstractVector{T}) where {T&lt;:Real}
+h_refinement_operator!(p::Degree, U::KnotVector{T}, u::T) where {T&lt;:Real}
+h_refinement_operator!(p::Degree, U::KnotVector{T}, span::Integer, u::T) where {T&lt;:Real}</code></pre><p>Insert one or more knots <span>$u$</span> into knotvector <span>$U$</span> and output the transformation operator from the coarse to the refined space. The knotvector is updated in-place. The output is represented as a <code>SparseMatrixCSC</code> matrix.</p><p><strong>Examples:</strong></p><pre><code class="language-julia-repl hljs">julia&gt; p = Degree(2)
+2
+
+julia&gt; U = KnotVector([0.0,1.0,2.0,3.0,4], [3,1,1,2,3])
+10-element NonDecreasingVector{Float64}:
+ 0.0
+ 0.0
+ 0.0
+ 1.0
+ 2.0
+ 3.0
+ 3.0
+ 4.0
+ 4.0
+ 4.0
+
+julia&gt; C = h_refinement_operator!(p, U, [0.5, 1.5, 2.5, 3.5]); # sparse matrix
+
+julia&gt; Matrix(C)
+11×7 Matrix{Float64}:
+ 1.0  0.0   0.0   0.0   0.0  0.0  0.0
+ 0.5  0.5   0.0   0.0   0.0  0.0  0.0
+ 0.0  0.75  0.25  0.0   0.0  0.0  0.0
+ 0.0  0.25  0.75  0.0   0.0  0.0  0.0
+ 0.0  0.0   0.75  0.25  0.0  0.0  0.0
+ 0.0  0.0   0.25  0.75  0.0  0.0  0.0
+ 0.0  0.0   0.0   0.5   0.5  0.0  0.0
+ 0.0  0.0   0.0   0.0   1.0  0.0  0.0
+ 0.0  0.0   0.0   0.0   0.5  0.5  0.0
+ 0.0  0.0   0.0   0.0   0.0  0.5  0.5
+ 0.0  0.0   0.0   0.0   0.0  0.0  1.0
+
+julia&gt; @show U;
+U = [0.0, 0.0, 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.0, 3.5, 4.0, 4.0, 4.0]</code></pre></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/refinement.jl#L134-L180">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.normalization_weights-Union{Tuple{IncreasingVector{T}}, Tuple{T}} where T&lt;:Real" href="#UnivariateSplines.normalization_weights-Union{Tuple{IncreasingVector{T}}, Tuple{T}} where T&lt;:Real"><code>UnivariateSplines.normalization_weights</code></a> — <span class="docstring-category">Method</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">normalization_weights(X)</code></pre><p>Determine a set of normalization weights that result in a more uniform set oftype( weighted quadrature weights when solving for the least norm solution. )</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/weightedquad.jl#L228-L234">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.nquadpoints-Tuple{SplineSpace, SplineSpace}" href="#UnivariateSplines.nquadpoints-Tuple{SplineSpace, SplineSpace}"><code>UnivariateSplines.nquadpoints</code></a> — <span class="docstring-category">Method</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">nquadpoints(S::SplineSpace, V::SplineSpace; add_boundary_points=false, add_additional_points=0, min_points=1)</code></pre><p>Determine the minimum number of quadrature points corresponding to a weighted quadrature rule with test-space <span>$V$</span> and target-space <span>$S$</span>.</p><p>Examples:</p><pre><code class="language-julia-repl hljs">julia&gt; S = SplineSpace(2, IncreasingVector([0.0,1.0,2.0,3.0]), [3,2,2,3]);
+
+julia&gt; V = SplineSpace(2, IncreasingVector([0.0,1.0,2.0,3.0]), [3,1,1,3]);
+
+julia&gt; A = UnivariateSplines.nquadpoints(S, V; add_boundary_points=false)
+3-element Vector{Int64}:
+ 3
+ 2
+ 3</code></pre></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/weightedquad.jl#L91-L109">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.num_elements-Tuple{NonDecreasingVector}" href="#UnivariateSplines.num_elements-Tuple{NonDecreasingVector}"><code>UnivariateSplines.num_elements</code></a> — <span class="docstring-category">Method</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">num_elements(U::KnotVector)</code></pre><p>Count the number of non-zero knot spans or elements in the knotvector.</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/base.jl#L35-L39">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.onebasisfuneval-Union{Tuple{T}, Tuple{NonDecreasingVector{T}, T}} where T&lt;:Real" href="#UnivariateSplines.onebasisfuneval-Union{Tuple{T}, Tuple{NonDecreasingVector{T}, T}} where T&lt;:Real"><code>UnivariateSplines.onebasisfuneval</code></a> — <span class="docstring-category">Method</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">onebasisfuneval(U, u)</code></pre><p>Compute value of a single B-spline basis-function defined by local knotvector &#39;U&#39; evaluated at point &#39;x&#39;.</p><p>The implementation of this function is taken from</p><p>Piegl, Les, and Wayne Tiller. The NURBS book. Springer Science &amp; Business Media, 2012.</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/bsplinebasisfuns.jl#L3-L13">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.refinement_operator-Tuple{Integer, NonDecreasingVector, IgaBase.AbstractRefinement}" href="#UnivariateSplines.refinement_operator-Tuple{Integer, NonDecreasingVector, IgaBase.AbstractRefinement}"><code>UnivariateSplines.refinement_operator</code></a> — <span class="docstring-category">Method</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">refinement_operator(p::Degree, U::KnotVector, method::AbstractRefinement)</code></pre><p>Compute the <a href="#UnivariateSplines.two_scale_operator-Union{Tuple{T}, Tuple{Integer, NonDecreasingVector{T}, Integer, NonDecreasingVector{T}}} where T&lt;:Real"><code>two_scale_operator</code></a> given <code>p</code> and <code>U</code> and the applicable refinement strategy: <code>IgaBase.hRefinement()</code>, <code>IgaBase.pRefinement()</code>, <code>IgaBase.kRefinement()</code>. See <code>IgaBase</code> package for definition of refinement methods.</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/refinement.jl#L249-L255">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.solve_leastnorm_without_constraints-Union{Tuple{T}, Tuple{Matrix{T}, Vector{T}}, Tuple{Matrix{T}, Vector{T}, Any}} where T&lt;:Real" href="#UnivariateSplines.solve_leastnorm_without_constraints-Union{Tuple{T}, Tuple{Matrix{T}, Vector{T}}, Tuple{Matrix{T}, Vector{T}, Any}} where T&lt;:Real"><code>UnivariateSplines.solve_leastnorm_without_constraints</code></a> — <span class="docstring-category">Method</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">solve_leastnorm_without_constraints(A, b, S=BigFloat)</code></pre><p>Solve underdetermined system of equation <span>$A x = b$</span> using QR factorization with arbitrary precision.</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/weightedquad.jl#L246-L251">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.table_required_points-Tuple{SplineSpace, SplineSpace}" href="#UnivariateSplines.table_required_points-Tuple{SplineSpace, SplineSpace}"><code>UnivariateSplines.table_required_points</code></a> — <span class="docstring-category">Method</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">table_required_points(S, V)</code></pre><p>Determine the number of exactness conditions in subsets of elements. The output is a matrix <span>$\mathsf{A}$</span> where <span>$\mathsf{A}_{ij}$</span> denotes the minimum number of points required in interval <span>$i:j$</span> to perform exact weighted quadrature.</p><p>Examples:</p><pre><code class="language-julia-repl hljs">julia&gt; S = SplineSpace(2, IncreasingVector([0.0,1.0,2.0,3.0]), [3,2,2,3]);
+
+julia&gt; V = SplineSpace(2, IncreasingVector([0.0,1.0,2.0,3.0]), [3,1,1,3]);
+
+julia&gt; A = UnivariateSplines.table_required_points(S, V)
+3×3×1 Array{Int64, 3}:
+[:, :, 1] =
+ 3  5  7
+ 2  5  0
+ 3  0  0</code></pre></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/weightedquad.jl#L31-L51">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.two_scale_operator-Union{Tuple{T}, Tuple{Integer, NonDecreasingVector{T}, Integer, NonDecreasingVector{T}}} where T&lt;:Real" href="#UnivariateSplines.two_scale_operator-Union{Tuple{T}, Tuple{Integer, NonDecreasingVector{T}, Integer, NonDecreasingVector{T}}} where T&lt;:Real"><code>UnivariateSplines.two_scale_operator</code></a> — <span class="docstring-category">Method</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">two_scale_operator(p::Degree, U::KnotVector{T}, q::Degree, V::KnotVector{T}) where {T&lt;:Real}</code></pre><p>The <code>two_scale_operator</code> encodes the main logic for all spline refinemement operations.</p><p>The arguments <code>p</code> and <code>U</code> correspond to the current spline space and <code>q</code> and <code>V</code> are the &quot;target&quot; degree knot vector.</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/refinement.jl#L261-L268">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.unit_integral_rescaling-Tuple{Integer, NonDecreasingVector, Integer}" href="#UnivariateSplines.unit_integral_rescaling-Tuple{Integer, NonDecreasingVector, Integer}"><code>UnivariateSplines.unit_integral_rescaling</code></a> — <span class="docstring-category">Method</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">unit_integral_rescaling(p, U, i::Int)
+unit_integral_rescaling(p, U)</code></pre><p>Compute the scaling factors that normalize the B-spline basis functions to have unit integral.</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/base.jl#L191-L197">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.wquadweights!-Union{Tuple{T}, Tuple{SparseArrays.SparseMatrixCSC{T}, SparseArrays.SparseMatrixCSC{T}, SparseArrays.SparseMatrixCSC{T}, Vector{T}}} where T&lt;:Real" href="#UnivariateSplines.wquadweights!-Union{Tuple{T}, Tuple{SparseArrays.SparseMatrixCSC{T}, SparseArrays.SparseMatrixCSC{T}, SparseArrays.SparseMatrixCSC{T}, Vector{T}}} where T&lt;:Real"><code>UnivariateSplines.wquadweights!</code></a> — <span class="docstring-category">Method</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">wquadweights!(M, B, W, C)</code></pre><p>Compute the quadrature weights in weighted quadrature such that <code>M ≈ W&#39; * B</code>.</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/weightedquad.jl#L263-L267">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.Bspline" href="#UnivariateSplines.Bspline"><code>UnivariateSplines.Bspline</code></a> — <span class="docstring-category">Type</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">Bspline{T} &lt;: ScalarMapping{1}</code></pre><p>A univariate B-spline function of field <code>T</code>.</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/bsplines.jl#L34-L38">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.BsplineBasis" href="#UnivariateSplines.BsplineBasis"><code>UnivariateSplines.BsplineBasis</code></a> — <span class="docstring-category">Type</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">BsplineBasis{T&lt;:Real} &lt;: Basis{T,3}</code></pre><p>Special array type for storing evaluating B-spline and their derivatives.</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/spaces.jl#L201-L205">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.BsplineEvaluationCache" href="#UnivariateSplines.BsplineEvaluationCache"><code>UnivariateSplines.BsplineEvaluationCache</code></a> — <span class="docstring-category">Type</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">BsplineEvaluationCache &lt;: EvaluationCache{1}</code></pre><p>Cache that caches basis function evaluation at a set of evaluation points.</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/bsplines.jl#L5-L9">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.BsplineSupport" href="#UnivariateSplines.BsplineSupport"><code>UnivariateSplines.BsplineSupport</code></a> — <span class="docstring-category">Type</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">BsplineSupport(S::SplineSpace)</code></pre><p>Iterator that outputs the supporting elements of each B-spline basis-function as a <code>UnitRange{Int64}</code>.</p><p><strong>Example:</strong></p><pre><code class="language-julia-repl hljs">julia&gt; S = SplineSpace(2, [0.0,2.0,3.0], [3,1,3]);
+
+julia&gt; for α in BsplineSupport(S)
+           @show α
+       end
+α = 1:1
+α = 1:2
+α = 1:2
+α = 2:2</code></pre></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/iterators.jl#L3-L21">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.GeneralizedGaussrule" href="#UnivariateSplines.GeneralizedGaussrule"><code>UnivariateSplines.GeneralizedGaussrule</code></a> — <span class="docstring-category">Type</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">GeneralizedGaussrule(p, r, nel, a, b)</code></pre><p>Compute a generalized Gaussian quadrature rule for a target spline-space <span>$\mathbb{S}^p_{r}(a,b)$</span> defined in a uniform partition with <span>$n_{el}$</span> elements.</p><p>These rules are made available in the following paper</p><p>Hiemstra, René R., et al. &quot;Optimal and reduced quadrature rules for tensor product and hierarchically refined splines in isogeometric analysis.&quot; Computer Methods in Applied Mechanics and Engineering 316 (2017): 966-1004.</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/gengaussquad.jl#L3-L15">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.KnotSpanIndices" href="#UnivariateSplines.KnotSpanIndices"><code>UnivariateSplines.KnotSpanIndices</code></a> — <span class="docstring-category">Type</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">KnotSpanIndices</code></pre><p>A sorted sequence of integers that refer to the corresponding non-zero knot span of a <code>KnotVector</code>.</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/base.jl#L19-L24">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.KnotVector" href="#UnivariateSplines.KnotVector"><code>UnivariateSplines.KnotVector</code></a> — <span class="docstring-category">Type</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">KnotVector{T&lt;:Real}</code></pre><p>A knot-vector is a non-decreasing sequence of real numbers. (typeallias of NonDecreasingVector{T})</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/base.jl#L11-L16">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.SpanIndex" href="#UnivariateSplines.SpanIndex"><code>UnivariateSplines.SpanIndex</code></a> — <span class="docstring-category">Type</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">SpanIndex(S::SplineSpace)</code></pre><p>Iterator that outputs the span index corresponding to each element in the partition</p><p><strong>Example:</strong></p><pre><code class="language-julia-repl hljs">julia&gt; S = SplineSpace(2, [0.0,1.0,2.0,3.0,4.0], [3,1,2,1,3]);
+
+julia&gt; for s in SpanIndex(S)
+           @show s
+       end
+s = 3
+s = 4
+s = 6
+s = 7</code></pre></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/iterators.jl#L71-L89">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.SplineSpace" href="#UnivariateSplines.SplineSpace"><code>UnivariateSplines.SplineSpace</code></a> — <span class="docstring-category">Type</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">SplineSpace(p, U)
+SplineSpace(p, x, m)
+SplineSpace(p, Interval(a, b), num_elements)</code></pre><p>Definition of a spline space by means of the polynomial degree <span>$p$</span>, a sequence of break-points <span>$x$</span> and the knot-multiplicity <span>$m$</span> or by prescribing the knot-vector <span>$U$</span>.</p><p><strong>Examples:</strong></p><pre><code class="language-julia-repl hljs">julia&gt; S = SplineSpace(2, [0.0,2.0,3.0], [3,1,3])
+SplineSpace(degree = 2, interval = [0.0, 3.0], dimension = 4)
+
+julia&gt; dimsplinespace(S)
+4
+
+julia&gt; Degree(S)
+2
+
+julia&gt; KnotVector(S)
+7-element NonDecreasingVector{Float64}:
+ 0.0
+ 0.0
+ 0.0
+ 2.0
+ 3.0
+ 3.0
+ 3.0</code></pre></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/spaces.jl#L10-L40">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.Support" href="#UnivariateSplines.Support"><code>UnivariateSplines.Support</code></a> — <span class="docstring-category">Type</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">BsplineSupport(S::SplineSpace)</code></pre><p>Iterator that outputs the supporting elements of each B-spline basis-function as a <code>UnitRange{Int64}</code>.</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/iterators.jl#L44-L49">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="UnivariateSplines.WeightedQuadrule" href="#UnivariateSplines.WeightedQuadrule"><code>UnivariateSplines.WeightedQuadrule</code></a> — <span class="docstring-category">Type</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">WeightedQuadrule{T&lt;:Real} &lt;: AbstractQuadrule{1}</code></pre><p>Weighted quadrature rules are test function specific quadrature rules that exactly integrate all functions in a targetspace. The rules are computed in high precision and are accurate up to 16 digits.</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/SuiteSplines/UnivariateSplines.jl/blob/b9acf63194e071d594b93079b908d29b0906b6dd/src/weightedquad.jl#L288-L294">source</a></section></article></article><nav class="docs-footer"><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="auto">Automatic (OS)</option><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option><option value="catppuccin-latte">catppuccin-latte</option><option value="catppuccin-frappe">catppuccin-frappe</option><option value="catppuccin-macchiato">catppuccin-macchiato</option><option value="catppuccin-mocha">catppuccin-mocha</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 1.13.0 on <span class="colophon-date" title="Monday 23 June 2025 21:08">Monday 23 June 2025</span>. Using Julia version 1.11.5.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
