@@ -2,7 +2,7 @@ export Degree, Regularity, Dimension
 export IncreasingVector, IncreasingRange, NonDecreasingVector
 export global_insert, deconstruct_vector, construct_vector
 export KnotVector, KnotSpanIndices
-export findspan, dimsplinespace, num_elements, grevillepoints
+export findspan, num_elements, grevillepoints
 export unit_integral_rescaling, bspline_integral_value
 
 import SortedSequences: IncreasingVector, IncreasingRange, NonDecreasingVector
@@ -30,7 +30,7 @@ const KnotSpanIndices = SortedSequence{Int}
 Compute the dimension of the spline space defined by degree ``p`` and
 knotsvector ``U``.
 """
-dimsplinespace(p::Degree, U::KnotVector) = length(U)-p-1
+IgaBase.dimsplinespace(p::Degree, U::KnotVector) = length(U)-p-1
 
 """
     num_elements(U::KnotVector)

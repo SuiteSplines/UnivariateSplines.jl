@@ -2,6 +2,7 @@ using Test, SafeTestsets
 
 @safetestset "Spline spaces functionality" begin
 
+using IgaBase
 using UnivariateSplines
 using SparseArrays, LinearAlgebra
 

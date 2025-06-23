@@ -1,12 +1,12 @@
 using UnivariateSplines
 using Documenter
 
-DocMeta.setdocmeta!(UnivariateSplines, :DocTestSetup, :(using UnivariateSplines); recursive=true)
+DocMeta.setdocmeta!(UnivariateSplines, :DocTestSetup, :(using UnivariateSplines; using IgaBase); recursive=true)
 
 makedocs(;
     modules=[UnivariateSplines],
     authors="René Hiemstra, Michał Mika and contributors",
-    sitename="CartesianProducts.jl",
+    sitename="UnivariateSplines.jl",
     format=Documenter.HTML(;
         canonical="https://SuiteSplines.github.io/UnivariateSplines.jl",
         edit_link="main",

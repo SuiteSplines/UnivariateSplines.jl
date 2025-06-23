@@ -86,5 +86,5 @@ jobs:
         run: |
           using Documenter: DocMeta, doctest
           using UnivariateSplines
-          DocMeta.setdocmeta!(UnivariateSplines, :DocTestSetup, :(using UnivariateSplines); recursive=true)
+          DocMeta.setdocmeta!(UnivariateSplines, :DocTestSetup, :(using UnivariateSplines; using IgaBase); recursive=true)
           doctest(UnivariateSplines)

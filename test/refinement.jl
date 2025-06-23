@@ -2,6 +2,7 @@ using Test, SafeTestsets
 
 @safetestset "Refinement" begin
 
+    using IgaBase
     using UnivariateSplines, SparseArrays
     import SortedSequences: Unique
 

@@ -1,4 +1,4 @@
-export Bspline, domain, dimension, codimension, @evaluate, @evaluate!, refine
+export Bspline, domain, @evaluate, @evaluate!, refine
 export Interpolation, QuasiInterpolation, project!, l2_error
 export partial_derivative, gradient, jacobian, hessian
 

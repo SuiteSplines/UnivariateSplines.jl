@@ -10,6 +10,7 @@ end
 
 @safetestset "Spline basic functionality" begin
 
+    using IgaBase
     using LinearAlgebra
     using SortedSequences, UnivariateSplines
 

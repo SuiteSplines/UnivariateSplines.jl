@@ -1,4 +1,4 @@
-export  dimension, codimension, ScalarFunction, GeometricMapping, Gradient, Hessian
+export ScalarFunction, GeometricMapping, Gradient, Hessian
 
 import IgaBase: dimension, codimension
 import AbstractMappings: ScalarFunction, GeometricMapping, Gradient, Hessian
