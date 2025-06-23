@@ -1,7 +1,7 @@
 name = "UnivariateSplines"
 uuid = "2552f6ce-f0d6-4ba3-bf39-bb338613ee69"
 authors = ["René Hiemstra <rrhiemstar@gmail.com>", "Michał Mika <michal@mika.sh>"]
-version = "0.14.0"
+version = "0.15.0"
 
 [deps]
 AbstractMappings = "7dac2afd-1bf6-47b8-bc94-9dcdcd19d527"

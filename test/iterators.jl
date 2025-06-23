@@ -2,6 +2,7 @@ using Test, SafeTestsets
 
 @safetestset "Iterators" begin
 
+using IgaBase
 using UnivariateSplines
 
 @testset "B-spline element supports iterator" begin

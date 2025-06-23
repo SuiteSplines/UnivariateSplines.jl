@@ -2,6 +2,7 @@ using Test, SafeTestsets
 
 @safetestset "B-spline basis functions" begin
 
+    using IgaBase
     using UnivariateSplines
 
     # test evaluation of a single basis function

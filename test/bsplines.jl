@@ -4,6 +4,7 @@ module BsplineEvaluationTest
 
 using Test 
 
+using IgaBase
 using UnivariateSplines
 using LinearAlgebra: norm
 

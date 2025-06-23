@@ -67,7 +67,7 @@ function count_to_value(x::AbstractVector, start::Int, value::Int)
     return index
 end
 
-dimsplinespace(p::Degree, r::Regularity, e::Dimension) = (p+1)*2 + (e-1)*(p-r) - p-1
+IgaBase.dimsplinespace(p::Degree, r::Regularity, e::Dimension) = (p+1)*2 + (e-1)*(p-r) - p-1
 
 choose_general_rule(::Even, m, m1, m2, m3) = (m>2*m1)
 choose_general_rule(::Odd, m, m1, m2, m3) = (m>2*(m1+m3)-1)

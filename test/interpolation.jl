@@ -2,6 +2,7 @@ using Test, SafeTestsets
 
 @safetestset "Interpolation" begin
 
+    using IgaBase
     using UnivariateSplines
 
     p = Degree(2)

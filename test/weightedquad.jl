@@ -2,6 +2,7 @@ using Test, SafeTestsets
 
 @safetestset "Weighted quadrature" begin
 
+    using IgaBase
     using UnivariateSplines
 
     using UnivariateSplines, SortedSequences, LinearAlgebra

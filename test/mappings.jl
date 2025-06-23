@@ -3,6 +3,7 @@
 module BsplineMappingsTest
 
 using Test
+using IgaBase
 using UnivariateSplines
 
 space = SplineSpace(Degree(2), Interval(0.0,1.0), 4)

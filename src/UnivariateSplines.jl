@@ -3,6 +3,8 @@ module UnivariateSplines
 using LinearAlgebra, SparseArrays, MAT, FastGaussQuadrature
 using SortedSequences, IgaBase, AbstractMappings
 
+import IgaBase: dimsplinespace, dimension, codimension
+
 include("base.jl")
 include("bsplinebasisfuns.jl")
 include("dersbsplinebasisfuns.jl")

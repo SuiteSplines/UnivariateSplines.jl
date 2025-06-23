@@ -2,6 +2,7 @@ using Test, SafeTestsets
 
 @safetestset "Quasi-interpolation" begin
 
+    using IgaBase
     using UnivariateSplines, LinearAlgebra
 
     @testset "quasi_interpolation_lyche" begin
